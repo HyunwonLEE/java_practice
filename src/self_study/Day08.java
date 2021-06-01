@@ -45,7 +45,7 @@ class Solution_08 {
 	}
 }
 
-public class Day_08 {
+public class Day08 {
 
 	public static void main(String[] args) {
 		Solution_08 s = new Solution_08();
