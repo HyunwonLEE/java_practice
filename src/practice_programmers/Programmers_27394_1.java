@@ -56,7 +56,7 @@ class Solution_27394{
 	}
 }
 
-public class Programmers_27394 {
+public class Programmers_27394_1 {
 
 	public static void main(String[] args) {
 
