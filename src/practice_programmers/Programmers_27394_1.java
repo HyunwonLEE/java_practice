@@ -1,57 +1,54 @@
 package practice_programmers;
 
+class Solution_27394 {
 
-class Solution_27394{
-
-	public int[] solution (String[] students) {
+	public int[] solution(String[] students) {
 		int[] answers = new int[students.length];
 		int[] s_point = new int[students.length];
-		for(int i = 0; i < students.length; i++) {
+		for (int i = 0; i < students.length; i++) {
+			s_point[i] = 10;
 			int Lpoint = 0;
 			int Ppoint = 0;
-			String[] array = students[i].split("");
-			for(int j = 0; j < students[i].length(); j++) {
-				switch (array[j]) {
-				case "A": {
+			char[] array = students[i].toCharArray();
+			for (int j = 0; j < students[i].length(); j++) {
+				if (array[j] == 'A') {
 					s_point[i]++;
-					break;
-				}case "L" :{
+				} else if (array[j] == 'L') {
 					Lpoint++;
-					if(Lpoint == 2) {
+					if (Lpoint == 2) {
 						s_point[i]--;
 						Lpoint = 0;
-						Ppoint++;						
+						Ppoint++;
 					}
-					break;
-				}case "P" :{
+				} else if (array[j] == 'P') {
 					s_point[i]--;
 					Ppoint++;
-					break;
-				}			
-				default:
-					throw new IllegalArgumentException("Unexpected value: " + array[j]);
 				}
-				if(Ppoint == 3) {
+				if (Ppoint == 3) {
 					s_point[i] = 0;
 					break;
 				}
-				
+
 			}
 		}
-		
-		int temp = 0;
-		for(int i = 0; i < answers.length; i++) {
-			answers[i]++;
-			for(int j = i + 1 ; j < answers.length; j++) {
-				if(s_point[i] < s_point[j]) {
-					answers[i]++;
-					
-				}else {
-					answers[j]++;
+
+		for (int i = 0; i < answers.length; i++) {
+			int a = i + 1;
+			int temp = s_point[i];
+			if (temp != 20) {
+
+				for (int j = 0; j < answers.length; j++) {
+					if (temp < s_point[j]) {
+						a = j + 1;
+						temp = s_point[j];
+					}
+
 				}
 			}
+			s_point[a - 1] = -1;
+			answers[i] = a;
 		}
-		
+
 		return answers;
 	}
 }
@@ -60,13 +57,16 @@ public class Programmers_27394_1 {
 
 	public static void main(String[] args) {
 
-		String[] students = {"ALALLAAPAA", "ALLLAAAPAA", "APAPALLAAA"};
+		// String[] students = { "AAAAAAAAAA", "AAALLLAPAA", "AAAAAAAPPP", "ALAAAAPAAA",
+		// "ALAAAAPAAA", "AAAALLLLLL" };
+		 String[] students = { "PPPAAAAAAA", "AAAAAAAAAA", "AAAAAAAAAA", "AAAAAAAAAA",
+		 "AAAAAAAAAA", "AAAAAAAAAA" };
+		//String[] students = { "PPPAAAAAAA" };
 		Solution_27394 s = new Solution_27394();
 		for (int i : s.solution(students)) {
 			System.out.println(i);
-		}	
-		
-		
+		}
+
 	}
 
 }
