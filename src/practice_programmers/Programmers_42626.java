@@ -17,7 +17,7 @@ class Solution_42626 {
         
         while(list.size() != 0) {
         	list.
-        	list.add(list.get(0))
+        	list.add(list.get(0));
         }
 
         
