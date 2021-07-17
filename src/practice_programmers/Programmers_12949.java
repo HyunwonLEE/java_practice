@@ -1,5 +1,5 @@
 package practice_programmers;
-给前
+//给前
 
 class Solution_12949 {
     public int[][] solution(int[][] arr1, int[][] arr2) {
