@@ -10,7 +10,7 @@ class Solution_42627 {
 		for(int i = 0; i < jobs.length; i++) {
 			map.put(jobs[i][0], jobs[i][1]);
 		}
-		for()
+		
 		
 		return answer;
 	}
