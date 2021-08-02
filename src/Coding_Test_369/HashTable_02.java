@@ -1,4 +1,4 @@
-package coding_test_369;
+package Coding_Test_369;
 
 class LinearProbing {
 	public Slot[] hashTable;

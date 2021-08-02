@@ -4,10 +4,10 @@ class Solution_12899 {
 	public String solution(long n) {
 		String answer = "";
 		String[] numbers = { "1", "2", "4" };
-		int a = (int) (n / 3);
+		int a = 0;
 		int b = (int) (n % 3);
 		do {
-			a = (int) (a / 3);
+			a = (int) (n / 3);
 			if (a > 0)
 				answer += numbers[a - 1];
 			else
@@ -24,7 +24,7 @@ public class Programmers_12899 {
 
 	public static void main(String[] args) {
 		Solution_12899 s = new Solution_12899();
-		long n = 9;
+		long n = 6;
 		System.out.println(s.solution(n));
 
 	}
