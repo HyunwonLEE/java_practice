@@ -1,9 +1,37 @@
-package Coding_Test_369;
+package coding_Test_369;
 
-
-
-public class BinaryTree02 {
+class NodeMgmt {
 	Node head = null;
+
+	public boolean insertNode(int data) {
+		// case 1 : Node가 하나도 없을 때
+		if (this.head == null) {
+			this.head = new Node(data);
+		} else {
+			Node findNode = this.head;
+			while (true) {
+				// Case 2-1 : 현재 Node의 왼쪽 Node가 들어가야할 때
+				if (data < findNode.value) {
+					if (findNode.left != null) {
+						findNode = findNode.left;
+
+					} else {
+						findNode.left = new Node(data);
+						break;
+					}
+					// Case 2-2 : 현재 Node의 오른쪽에 Node가 들어가야할 때
+				} else {
+					if (findNode.right != null) {
+						findNode = findNode.right;
+					} else {
+						findNode.right = new Node(data);
+						break;
+					}
+				}
+			}
+		}
+		return true;
+	}
 	public boolean delete(int value) {
 		boolean searched = false;
 		
@@ -127,6 +155,38 @@ public class BinaryTree02 {
 			return true;
 
 		}
+
+	}
+}
+
+public class BinaryTree01 {
+
+	public static void main(String[] args) {
+		NodeMgmt myTree = new NodeMgmt();
+		myTree.insertNode(10);
+		myTree.insertNode(15);
+		myTree.insertNode(13);
+		myTree.insertNode(11);
+		myTree.insertNode(14);
+		myTree.insertNode(18);
+		myTree.insertNode(16);
+		myTree.insertNode(19);
+		myTree.insertNode(17);
+		myTree.insertNode(7);
+		myTree.insertNode(8);
+		myTree.insertNode(6);
+		System.out.println(myTree.delete(15));
+		System.out.println("HEAD: " + myTree.head.value);
+		System.out.println("HEAD LEFT: " + myTree.head.left.value);
+		System.out.println("HEAD LEFT LEFT: " + myTree.head.left.left.value);
+		System.out.println("HEAD LEFT RIGHT: " + myTree.head.left.right.value);
+
+		System.out.println("HEAD RIGHT: " + myTree.head.right.value);
+		System.out.println("HEAD RIGHT LEFT: " + myTree.head.right.left.value);
+		System.out.println("HEAD RIGHT RIGHT: " + myTree.head.right.right.value);
+
+		System.out.println("HEAD RIGHT RIGHT LEFT: " + myTree.head.right.right.left.value);
+		System.out.println("HEAD RIGHT RIGHT RIGHT: " + myTree.head.right.right.right.value);
 
 	}
 

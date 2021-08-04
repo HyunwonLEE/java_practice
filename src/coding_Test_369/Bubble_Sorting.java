@@ -1,4 +1,4 @@
-package Coding_Test_369;
+package coding_Test_369;
 
 import java.util.ArrayList;
 import java.util.Collections;
