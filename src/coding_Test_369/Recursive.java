@@ -5,6 +5,9 @@ public class Recursive {
 	public static void main(String[] args) {
 		Factorial fObject = new Factorial();
 		System.out.println(fObject.factorialFunc(6));
+		
+		Fibonacci fi = new Fibonacci();
+		System.out.println(fi.fibonacci(10));
 
 	}
 
@@ -20,5 +23,15 @@ class Factorial {
 			return 4;
 		}
 		return this.factorialFunc(data - 1) + this.factorialFunc(data - 2) + this.factorialFunc(data - 3);
+	}
+}
+
+class Fibonacci {
+	public int fibonacci(int data) {
+		if (data <= 1) {
+			return data;
+		} 
+		return fibonacci(data - 2) + fibonacci(data - 1);
+
 	}
 }
