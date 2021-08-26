@@ -1,6 +1,7 @@
 package practice_programmers;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Programmers_72412 {
 
@@ -20,34 +21,46 @@ public class Programmers_72412 {
 
 class Solution_72412 {
 	public int[] solution(String[] info, String[] query) {
-		int[] answer = {};
-
+		int[] answer = new int[query.length];
+		HashMap<Integer, ArrayList<String>> map = new HashMap<Integer, ArrayList<String>>();
 		int index = 0;
-
 		for (int i = 0; i < query.length; i++) {
-			index++;
+
 			ArrayList<String> list = new ArrayList<>();
 			String[] arr = query[i].split(" ");
 			for (int j = 0; j < arr.length; j++) {
 				if (!arr[j].equals("and"))
 					list.add(arr[j]);
 			}
-			String[] arr1 = query[i].split(" ");
-			for (int j = 0; j < arr1.length; j++) {
-				if (arr1[j].equals(list.get(j))) {
+			map.put(index++, list);
 
-//				} else if (arr1[arr1.length - 1] > list.get(list.size() - 1)) {
-//
-//				}
+		}
+
+		for (int i = 0; i < map.size(); i++) {
+			ArrayList<String> list = map.get(i);
+			
+			for (int z = 0; z < info.length; z++) {
+				int cnt = 0;
+				String[] arr1 = info[z].split(" ");
+				for (int j = 0; j < arr1.length-1; j++) {
+					if (arr1[j].equals(list.get(j))) {
+						cnt++;
+
+					} else if (list.get(j).equals("-"))
+						cnt++;
+					else
+						break;
+				}
+				if (list.get(list.size() -1).equals("-") || Integer.parseInt(arr1[arr1.length - 1]) >= Integer.parseInt(list.get(list.size() - 1)))
+					cnt++;
+				if (cnt == list.size()) {
+					answer[i]++;					
+
+				}
 			}
 
 		}
-		for (int i = 0; i < info.length; i++) {
 
-			for (int j = 0; j < query.length; j++) {
-
-			}
-		}
 		return answer;
 	}
 }
