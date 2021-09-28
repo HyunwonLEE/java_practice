@@ -21,7 +21,7 @@ class Solution_60058 {
 		ArrayList<String> list = new ArrayList<String>(Arrays.asList(arr));
 		int a = 0;
 		for (int i = 0; i < list.size(); i++) {
-			if()
+			
 
 		}
 		return answer;
