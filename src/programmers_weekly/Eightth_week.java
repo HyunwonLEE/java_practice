@@ -17,25 +17,37 @@ public class Eightth_week {
 		int max_wh = 0;
 		int max_index = 0;
 
-		for (int i = 1; i < sizes.length; i++) {
+		for (int i = 0; i < sizes.length; i++) {
 			if (max < sizes[i][0]) {
 				max = sizes[i][0];
-				max_wh = 0;
+				max_wh = 1;
 				max_index = i;
 				
 			}
 			if (max < sizes[i][1]) {
 				max = sizes[i][1];
-				max_wh = 1;
+				max_wh = 0;
 				max_index = i;
 			}
 
 		}
-
+		
+		int temp = sizes[max_index][max_wh];
 		for (int i = 0; i < sizes.length; i++) {
 			
+			if(sizes[i][0] < sizes[i][1]) {
+				if(temp < sizes[i][0]) {
+					temp = sizes[i][0];
+				}
+			}else {
+				if(temp < sizes[i][1]) {
+					temp = sizes[i][1];
+				}
+			}
 
 		}
+		answer = temp*max;
+		System.out.println(temp + " * " + max + " = " + answer);
 
 		return answer;
 	}
