@@ -1,7 +1,9 @@
 package programmers_weekly;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.TreeMap;
 
 public class Sixth_week {
 
@@ -24,12 +26,15 @@ class Solution_85002 {
 		int[] count = new int[weights.length];
 		int[] weight_win = new int[weights.length];
 		List<Double> list = new ArrayList<Double>();
+		int[] com_count = new int[weights.length];
 
 		for (int i = 0; i < head2head.length; i++) {
+			com_count[i] = weights.length;
 			String[] arr = head2head[i].split("");
 			for (int j = 0; j < arr.length; j++) {
 				switch (arr[j]) {
 				case "N": {
+					com_count[i]--;
 					break;
 				}
 				case "W": {
@@ -43,10 +48,13 @@ class Solution_85002 {
 
 				}
 			}
-
-			list.add((double) count[i] / weights.length);
+			if (com_count[i] > 0)
+				list.add((double) count[i] / com_count[i]);
+			else
+				list.add(0.0d);
 
 		}
+		TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
 
 		for (int i = 0; i < list.size(); i++) {
 			answer[i] = weights.length;
@@ -73,8 +81,13 @@ class Solution_85002 {
 				}
 
 			}
+			map.put(answer[i], i);
 		}
 
+		Iterator<Integer> values = map.keySet().iterator();
+		for (int i = 0; i < answer.length; i++) {
+			answer[i] = map.get(values.next()) + 1;
+		}
 		return answer;
 	}
 
