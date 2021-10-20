@@ -1,5 +1,6 @@
 package softeer;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class 장애물인식프로그램_Exam {
@@ -8,17 +9,23 @@ public class 장애물인식프로그램_Exam {
 
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		int[][] arr = new int[N][N];
-		for(int i = 0; i < N; i++) {
+		String[][] arr = new String[N][N];
+		for (int i = 0; i < N; i++) {
 			String str = sc.next();
-			
-			for(int j = 0; j < str.length(); j++) {
-				arr[i][j] = str.charAt(j) - 48;
-			}
-			
+			arr[i] = str.split("");
+
 		}
-		
+		ArrayList<Integer> list = new ArrayList<>();
+
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < N; j++) {
+				System.out.println(arr[i][j]);
+			}
+
+		}
+
 		System.out.println("end");
+		
 	}
 
 }
