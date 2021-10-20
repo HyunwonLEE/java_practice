@@ -21,10 +21,8 @@ public class ¼ºÀûÆò±Õ_Exam {
 
 		for (int i = 0; i < count; i++) {
 			List<Integer> arr = list.subList(sc.nextInt() - 1, sc.nextInt());
-			int sum = 0;
-			for(int j = 0; j < arr.size(); j++) {
-				sum += arr.get(j);
-			}
+			int sum = arr.stream().mapToInt(Integer::intValue).sum();
+			
 			result[i] = String.format("%.2f", (double)sum/arr.size());
 			
 		}
