@@ -8,11 +8,12 @@ class Programmers_42839 {
 	static ArrayList<Integer> list = new ArrayList<>();
 	static int[] arr, selected;
 	static int index, answer = 0;
+	static boolean[] check = new boolean[10];
 	static HashSet<Integer> set = new HashSet<>();
 
 	public static void main(String[] args) {
 
-		String numbers = "000999";
+		String numbers = "17";
 		solution(numbers);
 
 	}
@@ -21,16 +22,20 @@ class Programmers_42839 {
 
 		arr = new int[numbers.length() + 1];
 		selected = new int[numbers.length() + 1];
-		for (int i = 1; i < arr.length; i++) {
-			arr[i] = numbers.charAt(i - 1) - 48;
+		
+		for (int i = 0; i < numbers.length(); i++) {
+
+			rec_func(numbers, sb, i + 1);
 		}
-		rec_func(1);
 
 		for (Integer integer : set) {
 			boolean rst = true;
 			for (int i = 2; i * i <= integer; i++) {
-				if (integer % i == 0)
+				if (integer % i == 0) {
 					rst = false;
+					break;
+				}
+
 			}
 			if (rst && integer > 1)
 				answer++;
@@ -40,27 +45,24 @@ class Programmers_42839 {
 		return answer;
 	}
 
-	static void rec_func(int k) {
-		if (k == arr.length) {
-			for (int i = 0; i < list.size(); i++) {
-				sb.append(list.get(i));
-			}
-
-			int value = sb.toString().isEmpty() ? 0 : Integer.parseInt(sb.toString());
-			set.add(value);
-
-			sb.delete(0, sb.length());
-			list.remove(0);
+	static void rec_func(String numbers, StringBuilder sb, int m) {
+		if (sb.length() == m) {
+			int num = Integer.parseInt(sb.toString());
+			set.add(num);
+			return;
 
 		} else {
-			
-			for (int i = 1; i < arr.length; i++) {
-				if (index != i || list.size() == 0) {
-					list.add(arr[i]);					
-				}
-				index = i;
-				rec_func(k + 1);
 
+			for (int i = 0; i < numbers.length(); i++) {
+				if(!check[i]) {
+					check[i] = true;
+					sb.append(numbers.charAt(i));
+					rec_func(numbers, sb, m);
+					check[i] = false;
+					sb.delete(sb.length()-1, sb.length());
+					
+				}
+				
 			}
 
 		}
