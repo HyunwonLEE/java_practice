@@ -1,7 +1,6 @@
 package coding_Test_369;
 
 
-
 public class BruteForce_01 {
 	static StringBuilder sb = new StringBuilder();
 	public static void main(String[] args) {
@@ -45,8 +44,8 @@ public class BruteForce_01 {
     	}
     }
     
-    
     /*
+    
 	static class FastReader{
 		BufferedReader br;
 		StringTokenizer st;
