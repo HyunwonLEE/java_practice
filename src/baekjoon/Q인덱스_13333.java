@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
+// 문제 이해를 못 하겠음
 public class Q인덱스_13333 {
 
 	public static void main(String[] args) throws IOException {
