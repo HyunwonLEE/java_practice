@@ -40,8 +40,12 @@ public class 신입사원_1946 {
 			
 			int result = 0;
 			for(int j = 0; j < point.length; j++) {
-				if(point[j].document <= cutline_doc && point[j].interview <= cutline_in)
+				if(point[j].interview <= cutline_in) {
 					result++;
+					cutline_in = point[j].interview;
+				}
+					
+				
 			}
 			sb.append(result).append('\n');
 			
