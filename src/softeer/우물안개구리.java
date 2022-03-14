@@ -3,7 +3,7 @@ package softeer;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class ¿ì¹°¾È°³±¸¸® {
+public class ìš°ë¬¼ì•ˆê°œêµ¬ë¦¬ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

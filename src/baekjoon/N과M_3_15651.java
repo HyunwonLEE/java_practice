@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class N°úM_3_15651 {
+public class Nê³¼M_3_15651 {
 	static StringBuilder sb = new StringBuilder();
 	static int N, M;
 	static int[] selected;

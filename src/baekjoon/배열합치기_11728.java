@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ¹è¿­ÇÕÄ¡±â_11728 {
+public class ë°°ì—´í•©ì¹˜ê¸°_11728 {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);

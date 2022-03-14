@@ -2,7 +2,7 @@ package softeer;
 
 import java.util.Scanner;
 
-public class º¯¼Ó±â8´Ü_Exam {
+public class ë³€ì†ê¸°8ë‹¨_Exam {
 
 	public static void main(String[] args) {
 

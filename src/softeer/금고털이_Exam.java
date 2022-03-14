@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class ±İ°íÅĞÀÌ_Exam {
+public class ê¸ˆê³ í„¸ì´_Exam {
 
 	public static void main(String[] args) {
 

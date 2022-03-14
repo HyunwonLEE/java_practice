@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ÀÏ°ö³­ÀïÀÌ_2309 {
+public class ì¼ê³±ë‚œìŸì´_2309 {
 	static ArrayList<Integer> list = new ArrayList<Integer>();
 	static StringBuilder sb = new StringBuilder();
 	static int sum;

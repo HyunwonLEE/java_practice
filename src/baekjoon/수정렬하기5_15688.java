@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ¼öÁ¤·ÄÇÏ±â5_15688 {
+public class ìˆ˜ì •ë ¬í•˜ê¸°5_15688 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

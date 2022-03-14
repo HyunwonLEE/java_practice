@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class ¼öÁ¤·ÄÇÏ±â4_11931 {
+public class ìˆ˜ì •ë ¬í•˜ê¸°4_11931 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

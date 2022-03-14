@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class ³ªÀÌ¼øÁ¤·Ä_10814 {
+public class ë‚˜ì´ìˆœì •ë ¬_10814 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		

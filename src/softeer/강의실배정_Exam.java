@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 
-public class °­ÀÇ½Ç¹èÁ¤_Exam {
+public class ê°•ì˜ì‹¤ë°°ì •_Exam {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 

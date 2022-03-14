@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class ÁÂÇ¥Á¤·ÄÇÏ±â2_11651 {
+public class ì¢Œí‘œì •ë ¬í•˜ê¸°2_11651 {
 
 	public static void main(String[] args) throws IOException {
 

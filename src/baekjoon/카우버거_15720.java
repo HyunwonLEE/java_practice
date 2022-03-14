@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-public class Ä«¿ì¹ö°Å_15720 {
+public class ì¹´ìš°ë²„ê±°_15720 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class µÎ¼öÀÇÇÕ_3273 {
+public class ë‘ìˆ˜ì˜í•©_3273 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 

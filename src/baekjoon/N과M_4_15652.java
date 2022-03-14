@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class N°úM_4_15652 {
+public class Nê³¼M_4_15652 {
 
 	static StringBuilder sb = new StringBuilder();
 	static int N, M;

@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class ÁÂÇ¥Á¤·ÄÇÏ±â_11650 {
+public class ì¢Œí‘œì •ë ¬í•˜ê¸°_11650 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

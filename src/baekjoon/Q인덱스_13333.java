@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-// ¹®Á¦ ÀÌÇØ¸¦ ¸ø ÇÏ°ÚÀ½
-public class QÀÎµ¦½º_13333 {
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¸ï¿½ ï¿½ï¿½ ï¿½Ï°ï¿½ï¿½ï¿½
+public class Qì¸ë±ìŠ¤_13333 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

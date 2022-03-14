@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
-public class ÁÂÇ¥¾ÐÃà_18870_hashmap {
+public class ì¢Œí‘œì••ì¶•_18870_hashmap {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

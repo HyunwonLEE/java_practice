@@ -1,6 +1,6 @@
 package exam;
 
-public class ∫Ò∆Æ∏¡∞Ì_02 {
+public class ÎπÑÌä∏ÎßùÍ≥†_02 {
 
 	public static void main(String[] args) {
 		int[][] circles = {{-4,0,2},{-4,0,4},{-4,0,6},{2,0,8}};

@@ -3,7 +3,7 @@ package softeer;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Àå¾Ö¹°ÀÎ½ÄÇÁ·Î±×·¥_Exam {
+public class ì¥ì• ë¬¼ì¸ì‹í”„ë¡œê·¸ë¨_Exam {
 
 	public static void main(String[] args) {
 

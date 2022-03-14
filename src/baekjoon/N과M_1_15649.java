@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class N°úM_1_15649 {
+public class Nê³¼M_1_15649 {
 	
 	static StringBuilder sb = new StringBuilder();
 	static int N, M;

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class ³ÊÈñÇÚµéÀº_15819 {
+public class ë„ˆí¬í•¸ë“¤ì€_15819 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

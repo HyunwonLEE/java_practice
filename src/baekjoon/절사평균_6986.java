@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Àı»çÆò±Õ_6986 {
+public class ì ˆì‚¬í‰ê· _6986 {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Iterator;
 import java.util.TreeMap;
 
-public class º£½ºÆ®¼¿·¯_1302 {
+public class ë² ìŠ¤íŠ¸ì…€ëŸ¬_1302 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

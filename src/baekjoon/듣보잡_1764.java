@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.TreeSet;
 
-public class µèº¸Àâ_1764 {
+public class ë“£ë³´ìž¡_1764 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -1,6 +1,6 @@
 package exam;
 
-public class ºñÆ®¸Á°í_01 {
+public class ë¹„íŠ¸ë§ê³ _01 {
 
 	public static void main(String[] args) {
 		int n = 4;
