@@ -1,9 +1,9 @@
-package cos;
-
 // You may use import as below.
 //import java.util.*;
 
-class A_3_initial_code {
+package cos;
+
+class Solution {
     public int solution(String pos) {
         // Write code here.
         int answer = 0;
@@ -12,7 +12,7 @@ class A_3_initial_code {
 
     // The following is main method to output testcase.
     public static void main(String[] args) {
-    	A_3_initial_code sol = new A_3_initial_code();
+        Solution sol = new Solution();
         String pos = "A7";
         int ret = sol.solution(pos);
 
